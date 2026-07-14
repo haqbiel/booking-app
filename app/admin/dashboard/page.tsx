@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 const DashboardPage = () => {
     return (
         <div className="max-w-screen-xl px-4 py-16 mt-10 mx-auto">
-            <h1 className="text-4xl font-bold text-gray-800">Dashboard</h1>
-            <Suspense fallback={<p>Loading cards...</p>}>
+            <h1 className="text-4xl font-bold text-primary">Dashboard</h1>
+            <Suspense fallback={<p className="text-ink-muted">Loading cards...</p>}>
                 <DashboardCards />
             </Suspense>
-            <Suspense fallback={<p>Loading reservation...</p>}>
+            <Suspense fallback={<p className="text-ink-muted">Loading reservation...</p>}>
                 <ReservationList />
             </Suspense>
         </div>

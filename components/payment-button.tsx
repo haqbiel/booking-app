@@ -35,7 +35,7 @@ const PaymentButton = ({
     }
 
     return (
-        <button onClick={handlePayment} className="px-10 py-4 mt-2 text-center font-semibold text-white w-full bg-orange-400 rounded-sm hover:bg-orange-500 cursor-pointer">
+        <button onClick={handlePayment} className="px-10 py-4 mt-2 text-center font-semibold text-white w-full bg-action rounded-sm hover:bg-action-hover transition-colors duration-200 cursor-pointer">
             {isPending ? "Processing..." : "Process Payment"}
         </button>
     );

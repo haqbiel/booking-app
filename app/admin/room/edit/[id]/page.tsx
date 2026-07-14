@@ -11,8 +11,8 @@ const UpdateRoomPage = async ({
   if (!roomId) return notFound();
 
   return (
-    <div className='max Iw-screen-xl px-4 py-16 mt-10 mx-auto'>
-      <Suspense fallback={<p>Loading...</p>}>
+    <div className='max-w-screen-xl px-4 py-16 mt-10 mx-auto'>
+      <Suspense fallback={<p className="text-ink-muted">Loading...</p>}>
         <EditRoom roomId={roomId} />
       </Suspense>
     </div>

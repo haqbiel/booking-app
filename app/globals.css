@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #003580;
+  --color-primary-hover: #00224F;
+  --color-action: #0071C2;
+  --color-action-hover: #005999;
+  --color-highlight: #FFB700;
+  --color-highlight-ink: #1A1A1A;
+  --color-ink: #1A1A1A;
+  --color-ink-muted: #595959;
+  --color-ink-subdued: #6B6B6B;
+  --color-canvas: #FFFFFF;
+  --color-surface-1: #F5F5F5;
+  --color-surface-2: #EBF3FF;
+  --color-border: #E0E0E0;
+  --color-review-score: #003580;
+  --color-success: #008009;
+  --color-error: #CC0000;
+
+  --shadow-card: 0 1px 6px rgba(0,0,0,0.10);
+  --shadow-elevated: 0 4px 16px rgba(0,0,0,0.16);
+  --shadow-popover: 0 2px 12px rgba(0,0,0,0.20);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+}
+
+* {
+  font-family: BlinkMacSystemFont, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+}

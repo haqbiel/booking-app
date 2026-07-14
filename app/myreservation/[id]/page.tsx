@@ -15,10 +15,10 @@ const MyReservationDetail = async ({
     const reservationId = (await params).id
 
     return (
-        <div className="min-h-screen bg-slate-50">
+        <div className="min-h-screen bg-surface-1">
             <div className="max-w-screen-lg mx-auto mt-10 py-20 px-4">
                 {/* Reservation Detail */}
-                <Suspense fallback={<p>Loading...</p>}>
+                <Suspense fallback={<p className="text-ink-muted">Loading...</p>}>
                     <ReservationDetail reservationId={reservationId} />
                 </Suspense>
             </div>

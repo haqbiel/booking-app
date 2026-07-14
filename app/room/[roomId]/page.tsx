@@ -15,7 +15,7 @@ const RoomDetailPage = async ({
 
     return (
         <div className="mt-16">
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<p className="text-ink-muted">Loading...</p>}>
                 <RoomDetail roomId={roomId} />
             </Suspense>
         </div>

@@ -8,8 +8,8 @@ export default function Home() {
       <Hero />
       <div className="mt-16">
         <div className="text-center">
-          <h1 className="text-4xl font-bold uppercase">Room & Rates</h1>
-          <p className="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur.</p>
+          <h1 className="text-4xl font-bold uppercase text-ink">Room & Rates</h1>
+          <p className="py-3 text-ink-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur.</p>
         </div>
         <Main />
       </div>

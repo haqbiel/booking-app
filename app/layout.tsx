@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/navbar/footer";
 import { SessionProvider } from "next-auth/react";
 import { auth } from "@/auth";
-
-const raleway = Raleway({
-  variable: "--font-raleway",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Home",
@@ -25,11 +19,10 @@ export default async function RootLayout({
   const session = await auth();
   return (
     <html lang="en">
-      <body
-        className={`${raleway.variable} antialiased`}>
+      <body className="antialiased">
         <SessionProvider session={session}>
           <Navbar />
-          <main className="bg-gray-50 min-h-screen">{children}</main>
+          <main className="bg-surface-1 min-h-screen">{children}</main>
           <Footer />
         </SessionProvider>
       </body>

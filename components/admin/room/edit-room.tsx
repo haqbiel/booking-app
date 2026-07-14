@@ -8,7 +8,7 @@ const EditRoom = async ({ roomId }: { roomId: string }) => {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-4">Edit a Room</h1>
+            <h1 className="text-3xl font-bold text-ink mb-4">Edit a Room</h1>
             <EditForm amenities={amenities} room={room} />
         </div>
     )

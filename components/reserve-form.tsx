@@ -36,12 +36,11 @@ const ReserveForm = ({
         }
     })
 
-
     return (
         <div>
             <form action={formAction}>
                 <div className="mb-4">
-                    <label className="block mb-2 text-sm font-medium text-gray-900">Arrival - Departure</label>
+                    <label className="block mb-2 text-sm font-semibold text-ink">Arrival - Departure</label>
                     <DatePicker
                         selected={startDate}
                         startDate={startDate}
@@ -52,26 +51,26 @@ const ReserveForm = ({
                         excludeDateIntervals={excludeDates}
                         dateFormat={"dd-MM-yyyy"}
                         wrapperClassName="w-full"
-                        className="py-2 px-4 rounded-md border •border-gray-300 w-full" />
+                        className="py-2 px-4 rounded-md border border-border w-full bg-canvas text-ink focus:ring-2 focus:ring-action focus:outline-none transition-all duration-200" />
                     <div aria-live="polite" aria-atomic="true">
-                        <p className="text-sm text-red-500 mt-2">{state?.messageDate}</p>
+                        <p className="text-sm text-error mt-2">{state?.messageDate}</p>
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label className="block mb-2 text-sm font-medium text-gray-900">Your Name</label>
-                    <input type="text" name="name" className="py-2 px-4 rounded-md border •border-gray-300 w-full" placeholder="Full Name..." />
+                    <label className="block mb-2 text-sm font-semibold text-ink">Your Name</label>
+                    <input type="text" name="name" className="py-2 px-4 rounded-md border border-border w-full bg-canvas text-ink focus:ring-2 focus:ring-action focus:outline-none transition-all duration-200" placeholder="Full Name..." />
                     <div aria-live="polite" aria-atomic="true">
-                        <p className="text-sm text-red-500 mt-2">{state?.error?.name}</p>
+                        <p className="text-sm text-error mt-2">{state?.error?.name}</p>
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label className="block mb-2 text-sm font-medium text-gray-900">Phone Number</label>
-                    <input type="text" name="phone" className="py-2 px-4 rounded-md border •border-gray-300 w-full" placeholder="Phone Number..." />
+                    <label className="block mb-2 text-sm font-semibold text-ink">Phone Number</label>
+                    <input type="text" name="phone" className="py-2 px-4 rounded-md border border-border w-full bg-canvas text-ink focus:ring-2 focus:ring-action focus:outline-none transition-all duration-200" placeholder="Phone Number..." />
                     <div aria-live="polite" aria-atomic="true">
-                        <p className="text-sm text-red-500 mt-2">{state?.error?.phone}</p>
+                        <p className="text-sm text-error mt-2">{state?.error?.phone}</p>
                     </div>
                 </div>
-                <button type="submit" className={clsx("px-10 py-3 text-center font-semibold text-white w-full bg-orange-400 rounded-sm cursor-pointer hover:bg-orange-500", {
+                <button type="submit" className={clsx("px-10 py-3 text-center font-semibold text-white w-full bg-action rounded-sm cursor-pointer hover:bg-action-hover transition-colors duration-200", {
                     "opacity-50 cursor-progress": isPending,
                 })} disabled={isPending}>
                     {isPending ? "Loading..." : "Reserve"}
