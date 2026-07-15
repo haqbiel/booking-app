@@ -59,13 +59,13 @@ const Footer = () => {
                     <div className="mb-5">
                       <input type="text" name="email" className="w-full p-3 rounded-sm bg-white" placeholder="johndoe@gmail.com"/>
                     </div>
-                    <button className="bg-highlight text-highlight-ink p-3 font-bold w-full text-center rounded-sm hover:bg-highlight/90 transition-colors duration-200">Subscribe</button>
+                    <button className="bg-action text-white p-3 font-bold w-full text-center rounded-sm hover:bg-action-hover transition-colors duration-200">Subscribe</button>
                   </form>
                 </div>
             </div>
         </div>
         <div className="max-w-screen-xl mx-auto px-4 border-t border-white/20 py-8 text-center text-base text-white/60">
-            &copy; Copyright 2025 | Tutorial | All Right Reserved
+            &copy; Copyright 2026 | All Right Reserved
         </div>
     </footer>
   )
